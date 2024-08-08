@@ -1,6 +1,6 @@
+// Makes a grid
 const container = document.getElementById("container");
 
-//Makes a grid
 function makeGrid (rowNum) {
     for (let i = 0; i < rowNum; i++) {
         const row = document.createElement("div");
@@ -15,3 +15,11 @@ function makeGrid (rowNum) {
 }
 
 makeGrid(16);
+
+// Handles changing background color on hover
+const tileInGrid = document.getElementsByClassName("rowTile");
+for (let i = 0; i < tileInGrid.length;i++ ) {
+    tileInGrid[i].addEventListener("mouseover" , function() {
+        tileInGrid[i].style.backgroundColor = "blue";
+    });
+}
