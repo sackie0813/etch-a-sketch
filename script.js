@@ -1,10 +1,17 @@
 const container = document.getElementById("container");
 
-function makeRow (rowNum) {
+//Makes a grid
+function makeGrid (rowNum) {
     for (let i = 0; i < rowNum; i++) {
-    let row = document.createElement("div");
-    container.appendChild(row).className = "gridRows";
+        const row = document.createElement("div");
+        row.className = "row"
+        container.append(row); 
+        for (let j = 0; j < rowNum; j++) {
+            const tile = document.createElement("div");
+            tile.className = "rowTile";  
+            row.appendChild(tile);
+        } 
     }
 }
 
-makeRow(5);
+makeGrid(16);
