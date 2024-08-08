@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+body > div , body > button {
+    margin-bottom: 50px;
+}
+
 #container {
     display:flex;
     flex-direction:column;
+    min-width:960px;
+    width:960px;
 }
 
 .row {
@@ -13,6 +19,12 @@
 }
 
 .rowTile {
-    border: 2px solid black;
-    padding: 20px;
+    border: 1px solid black;
+    padding:5px;
+}
+
+.resetButton {
+    background-color:rgb(55, 66, 224);
+    color:white;
+    border-radius: 25px;
 }
