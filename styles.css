@@ -24,8 +24,11 @@ body {
     justify-content: space-evenly;
 }
 
-.sizeButton {
+.sizeButton , .reset {
     width: 500px;
     margin: 10px;
     padding:10px;
+    border-radius: 25px;
+    color:white;
+    background-color: rgb(61, 61, 218);
 }
