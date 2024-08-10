@@ -2,29 +2,30 @@
     box-sizing: border-box;
 }
 
-body > div , body > button {
-    margin-bottom: 50px;
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin: 30px;
 }
 
 #container {
     display:flex;
-    flex-direction:column;
-    min-width:960px;
-    width:960px;
+    flex-wrap:wrap;
+    width:500px;
+    height:500px;
+    border:10px solid black;
 }
 
-.row {
-    display:flex;
-    flex-direction:row;
-}
-
-.rowTile {
+.tile {
     border: 1px solid black;
-    padding:5px;
+    flex: auto;
+    justify-content: space-evenly;
 }
 
-.resetButton {
-    background-color:rgb(55, 66, 224);
-    color:white;
-    border-radius: 25px;
+.sizeButton {
+    width: 500px;
+    margin: 10px;
+    padding:10px;
 }
